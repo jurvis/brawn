@@ -3,7 +3,7 @@ require "bruteios/commands_generator"
 
 module Bruteios
   class CLILauncher
-    def launch
+    def self.launch
       Bruteios::CommandsGenerator.start
     end
   end
