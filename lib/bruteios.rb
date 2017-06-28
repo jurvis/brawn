@@ -1,5 +1,7 @@
 require "bruteios/version"
 
 module Bruteios
-  # Your code goes here...
+  def launch
+    Bruteios::CommandsGenerator.start
+  end
 end
