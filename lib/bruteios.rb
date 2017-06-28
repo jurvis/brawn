@@ -1,7 +1,10 @@
 require "bruteios/version"
+require "bruteios/commands_generator"
 
 module Bruteios
-  def launch
-    Bruteios::CommandsGenerator.start
+  class CLILauncher
+    def launch
+      Bruteios::CommandsGenerator.start
+    end
   end
 end
