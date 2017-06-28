@@ -4,5 +4,5 @@ task :default => :spec
 
 task :bi do
   `gem build bruteios.gemspec`
-  `gem install bruteios-#{Bruteios::VERSION}.gem`
+  `gem install bruteios-#{Bruteios::VERSION}.gem --local`
 end
