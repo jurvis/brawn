@@ -1,3 +1,7 @@
+require 'net/ssh'
+require 'table_print'
+require 'hooray'
+
 require "bruteios/version"
 require "bruteios/commands_generator"
 
