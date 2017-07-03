@@ -27,6 +27,13 @@ module Bruteios
         end
       end
 
+      command "exploit" do |c|
+	c.syntax = 'bruteios exploit <ip_addr>'
+	c.action do |args, options|
+	  Bruteios::Exploiter.new.run args.first
+	end
+      end
+
       default_command :help
 
       run! 
