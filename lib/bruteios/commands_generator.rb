@@ -24,10 +24,10 @@ module Bruteios
 
         c.action do |args, options|
           Bruteios::Scanner.new.run args.first
-        end
+	end
       end
 
-      command "exploit" do |c|
+      command :exploit do |c|
 	c.syntax = 'bruteios exploit <ip_addr>'
 	c.action do |args, options|
 	  Bruteios::Exploiter.new.run args.first
