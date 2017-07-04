@@ -2,6 +2,6 @@
 
 $LOAD_PATH.push File.expand_path("../../lib", __FILE__)
 
-require "bruteios"
+require "brawn"
 
-Bruteios::CLILauncher.launch
+Brawn::CLILauncher.launch

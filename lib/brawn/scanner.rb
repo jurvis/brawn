@@ -1,4 +1,4 @@
-module Bruteios 
+module Brawn 
   class Scanner
     def run(network_addr)
       puts "Scanning for Devices in Network..."

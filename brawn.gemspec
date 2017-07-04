@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'bruteios/version'
+require 'brawn/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "bruteios"
-  spec.version       = Bruteios::VERSION
+  spec.name          = "brawn"
+  spec.version       = Brawn::VERSION
   spec.authors       = ["Jurvis Tan"]
   spec.email         = ["jurvis.tan@me.com"]
 
   spec.summary       = %q{School assignment to demonstrate pen-testing iDevices}
   spec.description   = %q{School assignment to demonstrate pen-testing iDevices}
-  spec.homepage      = "https://github.com/jurvis/bruteios"
+  spec.homepage      = "https://github.com/jurvis/brawn"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
