@@ -29,11 +29,11 @@ module Bruteios
       end
 
       command :exploit do |c|
-	c.syntax = 'bruteios exploit <ip_addr>'
-	c.description = "Exploit an iOS device with the given IP address"
-	c.action do |args, options|
-	  Bruteios::Exploiter.new.run args.first
-	end
+        c.syntax = 'bruteios exploit <ip_addr>'
+        c.description = "Exploit an iOS device with the given IP address"
+        c.action do |args, options|
+          Bruteios::Exploiter.new.run args.first
+        end
       end
 
       default_command :help
