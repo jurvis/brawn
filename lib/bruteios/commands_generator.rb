@@ -19,11 +19,11 @@ module Bruteios
       program :help_formatter, :compact
 
       command :scan do |c|
-        c.syntax = 'bruteios scan'
-        c.description = "Returns a list of iPhones in network with SSH open with default credentials"
+        c.syntax = 'bruteios scan <network_addr>'
+        c.description = "Returns a list of iOS devices in network with SSH open with default credentials"
 
         c.action do |args, options|
-          Bruteios::Scanner.new.run
+          Bruteios::Scanner.new.run args.first
         end
       end
 

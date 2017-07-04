@@ -1,8 +1,8 @@
 module Bruteios 
   class Scanner
-    def run
+    def run(network_addr)
       puts "Scanning for Devices in Network..."
-      nodes = Hooray::Seek.new('', '22', '').nodes
+      nodes = Hooray::Seek.new(network_addr, '22', '').nodes
       puts "Found #{nodes.count} nodes"
       puts "Attempting SSH..."
       sshable_nodes = nodes.select { |node| can_ssh?(node) }
