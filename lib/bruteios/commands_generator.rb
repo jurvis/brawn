@@ -1,4 +1,5 @@
 require 'commander'
+require 'bruteios/exploiter'
 require 'bruteios/scanner'
 require 'bruteios/version'
 
