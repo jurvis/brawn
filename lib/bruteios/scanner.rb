@@ -37,9 +37,7 @@ module Bruteios
         Net::SSH.start(ip_addr, "root", :password => "alpine", :auth_methods => ["password"], :number_of_password_prompts => 0 ) do |ssh|
           return true
         end
-      rescue Net::SSH::AuthenticationFailed => e
-        return false
-      rescue Net::SSH::Disconnect => e
+      rescue Exception
         return false
       end 
     end
