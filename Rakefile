@@ -1,8 +1,8 @@
 require "bundler/gem_tasks"
-require "bruteios/version"
+require "brawn/version"
 task :default => :spec
 
 task :bi do
-  `gem build bruteios.gemspec`
-  `gem install bruteios-#{Bruteios::VERSION}.gem --local`
+  `gem build brawn.gemspec`
+  `gem install brawn-#{Brawn::VERSION}.gem --local`
 end
